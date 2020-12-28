@@ -1,0 +1,13 @@
+use holiday_park;
+
+DROP TABLE IF EXISTS contract;
+CREATE TABLE contract
+(
+    contract_id INTEGER,
+    customer_address VARCHAR(255),
+    customer_name VARCHAR(255),
+    house_nr INTEGER,
+    offer_id INTEGER, /* foreign key offer */
+
+    PRIMARY KEY (contract_id)
+)
