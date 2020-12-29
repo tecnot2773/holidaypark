@@ -22,6 +22,8 @@ CREATE TABLE toilet
     d_flag BOOLEAN,
     emergency BOOLEAN,
 
+    dome_id INTEGER, /* foreign key dome */
+
     PRIMARY KEY (toilet_id)
 );
 
@@ -35,6 +37,8 @@ CREATE TABLE pool
     slides INTEGER,
     outdoor_pool BOOLEAN,
 
+    dome_id INTEGER, /* foreign key dome */
+
     PRIMARY KEY (pool_id)
 );
 
@@ -45,6 +49,8 @@ CREATE TABLE restaurant
   open_at VARCHAR(255),
   smoking_room_exists BOOLEAN,
   nr_of_tables INTEGER,
+
+  dome_id INTEGER, /* foreign key dome */
 
   PRIMARY KEY (restaurant_id)
 );
@@ -65,6 +71,8 @@ CREATE TABLE vehicle
     model VARCHAR(255) NULL, /* bike attribute */
     training_wheels BOOLEAN, /* bike attribute */
     bike_nr INTEGER NULL, /* bike attribute */
+
+    dome_id INTEGER, /* foreign key dome */
 
     PRIMARY KEY (vehicle_id)
 )
