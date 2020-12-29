@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/bill.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/booking_request.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/booking_request_activities.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/contract.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/contract_activities.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/create_database.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/dome.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/keycard.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/offer.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/property.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/reception.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/way_of_delivery.sql" dialect="MariaDB" />
+  </component>
+</project>
