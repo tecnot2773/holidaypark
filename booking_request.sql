@@ -11,7 +11,7 @@ CREATE TABLE booking_request
     price DECIMAL(8,2),
     season VARCHAR(255),
 
-    customer_id INTEGER,
+    customer_id INTEGER NULL,
 
     PRIMARY KEY (booking_request_id)
 )

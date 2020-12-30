@@ -5,9 +5,9 @@ CREATE TABLE way_of_delivery
 (
     way_of_delivery_id INTEGER,
     way_of_delivery_type ENUM('email', 'mail', 'at_checkout'),
-    offer_id INTEGER,
-    contract_id INTEGER,
-    bill_id INTEGER,
+    offer_id INTEGER NULL,
+    contract_id INTEGER NULL,
+    bill_id INTEGER NULL,
 
     PRIMARY KEY (way_of_delivery_id)
 );

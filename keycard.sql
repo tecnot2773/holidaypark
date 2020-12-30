@@ -1,6 +1,6 @@
 USE holiday_park;
 
-DROP TABLE IF EXISTS keycard;
+DROP TABLE IF EXISTS key_card;
 CREATE TABLE key_card
 (
     key_card_id INTEGER,
@@ -8,18 +8,17 @@ CREATE TABLE key_card
     check_in DATE,
     check_out DATE,
     card_owner_id INTEGER, /* foreign key contract*/
-    bill_nr INTEGER,     /* foreign key bill*/
     adult_key_card BOOLEAN NULL,
     child_key_card BOOLEAN NULL,
 
-    reception_id INTEGER, /* foreign key reception */
-    bill_id INTEGER, /* foreign key bill */
+    reception_id INTEGER NULL, /* foreign key reception */
+    bill_nr INTEGER NULL, /* foreign key bill */
 
     PRIMARY KEY (key_card_id)
-)
+);
 
 
-DROP TABLE IF EXISTS has_entered;
+DROP TABLE IF EXISTS has_entrance;
 CREATE TABLE has_entrance
 (
     id INTEGER,
@@ -27,4 +26,4 @@ CREATE TABLE has_entrance
     dome_id INTEGER,
 
     PRIMARY KEY (id)
-)
+);
