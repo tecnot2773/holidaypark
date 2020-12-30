@@ -1253,215 +1253,215 @@
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="397" parent="342" name="activity_type">
-      <Position>2</Position>
-      <DataType>enum(&apos;toilet&apos;, &apos;pool&apos;, &apos;restaurant&apos;, &apos;vehicle&apos;)|0e</DataType>
-    </column>
-    <key id="398" parent="342" name="PRIMARY">
+    <key id="397" parent="342" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>dome_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="399" parent="343" name="email_id">
+    <column id="398" parent="343" name="email_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="400" parent="343" name="timestamp">
+    <column id="399" parent="343" name="timestamp">
       <Position>2</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <key id="401" parent="343" name="PRIMARY">
+    <key id="400" parent="343" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>email_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="402" parent="344" name="gifter">
+    <column id="401" parent="344" name="gifter">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="403" parent="344" name="giftee">
+    <column id="402" parent="344" name="giftee">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="404" parent="344" name="PRIMARY">
+    <key id="403" parent="344" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>gifter
 giftee</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="405" parent="345" name="supervisor">
+    <column id="404" parent="345" name="supervisor">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="406" parent="345" name="subordinate">
+    <column id="405" parent="345" name="subordinate">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="407" parent="345" name="PRIMARY">
+    <key id="406" parent="345" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>supervisor
 subordinate</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="408" parent="346" name="key_card_id">
+    <column id="407" parent="346" name="key_card_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="409" parent="346" name="code">
+    <column id="408" parent="346" name="code">
       <Position>2</Position>
       <DataType>binary(1)|0s</DataType>
     </column>
-    <column id="410" parent="346" name="check_in">
+    <column id="409" parent="346" name="check_in">
       <Position>3</Position>
       <DataType>date|0s</DataType>
     </column>
-    <column id="411" parent="346" name="check_out">
+    <column id="410" parent="346" name="check_out">
       <Position>4</Position>
       <DataType>date|0s</DataType>
     </column>
-    <column id="412" parent="346" name="card_owner_id">
+    <column id="411" parent="346" name="card_owner_id">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="413" parent="346" name="bill_nr">
+    <column id="412" parent="346" name="bill_nr">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="414" parent="346" name="adult_key_card">
+    <column id="413" parent="346" name="adult_key_card">
       <Position>7</Position>
       <DataType>tinyint(1)|0s</DataType>
     </column>
-    <column id="415" parent="346" name="child_key_card">
+    <column id="414" parent="346" name="child_key_card">
       <Position>8</Position>
       <DataType>tinyint(1)|0s</DataType>
     </column>
-    <key id="416" parent="346" name="PRIMARY">
+    <key id="415" parent="346" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>key_card_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="417" parent="347" name="mail_id">
+    <column id="416" parent="347" name="mail_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="418" parent="347" name="PRIMARY">
+    <key id="417" parent="347" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>mail_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="419" parent="348" name="booking_request_id">
+    <column id="418" parent="348" name="booking_request_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="420" parent="348" name="season">
+    <column id="419" parent="348" name="season">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="421" parent="348" name="discount">
+    <column id="420" parent="348" name="discount">
       <Position>3</Position>
       <DataType>decimal(8,2 digit)|0s</DataType>
     </column>
-    <column id="422" parent="348" name="price">
+    <column id="421" parent="348" name="price">
       <Position>4</Position>
       <DataType>decimal(8,2 digit)|0s</DataType>
     </column>
-    <column id="423" parent="348" name="property_id">
+    <column id="422" parent="348" name="property_id">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <key id="424" parent="348" name="PRIMARY">
+    <key id="423" parent="348" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>booking_request_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="425" parent="349" name="ID">
+    <column id="424" parent="349" name="ID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="426" parent="349" name="first_name">
+    <column id="425" parent="349" name="first_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="427" parent="349" name="surname">
+    <column id="426" parent="349" name="surname">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="428" parent="349" name="street">
+    <column id="427" parent="349" name="street">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="429" parent="349" name="town">
+    <column id="428" parent="349" name="town">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="430" parent="349" name="phone_number">
+    <column id="429" parent="349" name="phone_number">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="431" parent="349" name="birth_date">
+    <column id="430" parent="349" name="birth_date">
       <Position>7</Position>
       <DataType>date|0s</DataType>
     </column>
-    <column id="432" parent="349" name="age">
+    <column id="431" parent="349" name="age">
       <Position>8</Position>
       <DataType>int(11)|0s</DataType>
       <DefaultExpression>timestampdiff(YEAR,`birth_date`,curdate())</DefaultExpression>
       <ColumnKind>generated-virtual</ColumnKind>
     </column>
-    <column id="433" parent="349" name="c_flag">
+    <column id="432" parent="349" name="c_flag">
       <Position>9</Position>
       <DataType>tinyint(1)|0s</DataType>
     </column>
-    <column id="434" parent="349" name="customer_number">
+    <column id="433" parent="349" name="customer_number">
       <Position>10</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="435" parent="349" name="e_flag">
+    <column id="434" parent="349" name="e_flag">
       <Position>11</Position>
       <DataType>tinyint(1)|0s</DataType>
     </column>
-    <column id="436" parent="349" name="SSN">
+    <column id="435" parent="349" name="SSN">
       <Position>12</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <key id="437" parent="349" name="PRIMARY">
+    <key id="436" parent="349" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="438" parent="350" name="pool_id">
+    <column id="437" parent="350" name="pool_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="439" parent="350" name="opening">
+    <column id="438" parent="350" name="opening">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="440" parent="350" name="nr_of_cabins">
+    <column id="439" parent="350" name="nr_of_cabins">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="441" parent="350" name="max_customers">
+    <column id="440" parent="350" name="max_customers">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="442" parent="350" name="slides">
+    <column id="441" parent="350" name="slides">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="443" parent="350" name="outdoor_pool">
+    <column id="442" parent="350" name="outdoor_pool">
       <Position>6</Position>
       <DataType>tinyint(1)|0s</DataType>
+    </column>
+    <column id="443" parent="350" name="dome_id">
+      <Position>7</Position>
+      <DataType>int(11)|0s</DataType>
     </column>
     <key id="444" parent="350" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
@@ -1561,135 +1561,147 @@ subordinate</ColNames>
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <key id="467" parent="353" name="PRIMARY">
+    <column id="467" parent="353" name="dome_id">
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+    </column>
+    <key id="468" parent="353" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>restaurant_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="468" parent="354" name="toilet_id">
+    <column id="469" parent="354" name="toilet_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="469" parent="354" name="cleaning_interval_in_days">
+    <column id="470" parent="354" name="cleaning_interval_in_days">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="470" parent="354" name="b_flag">
+    <column id="471" parent="354" name="b_flag">
       <Position>3</Position>
       <DataType>tinyint(1)|0s</DataType>
     </column>
-    <column id="471" parent="354" name="changing_table">
+    <column id="472" parent="354" name="changing_table">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
     </column>
-    <column id="472" parent="354" name="u_flag">
+    <column id="473" parent="354" name="u_flag">
       <Position>5</Position>
       <DataType>tinyint(1)|0s</DataType>
     </column>
-    <column id="473" parent="354" name="toilet_stall">
+    <column id="474" parent="354" name="toilet_stall">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="474" parent="354" name="pissoir">
+    <column id="475" parent="354" name="pissoir">
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="475" parent="354" name="d_flag">
+    <column id="476" parent="354" name="d_flag">
       <Position>8</Position>
       <DataType>tinyint(1)|0s</DataType>
     </column>
-    <column id="476" parent="354" name="emergency">
+    <column id="477" parent="354" name="emergency">
       <Position>9</Position>
       <DataType>tinyint(1)|0s</DataType>
     </column>
-    <key id="477" parent="354" name="PRIMARY">
+    <column id="478" parent="354" name="dome_id">
+      <Position>10</Position>
+      <DataType>int(11)|0s</DataType>
+    </column>
+    <key id="479" parent="354" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>toilet_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="478" parent="355" name="vehicle_id">
+    <column id="480" parent="355" name="vehicle_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="479" parent="355" name="period_begin">
+    <column id="481" parent="355" name="period_begin">
       <Position>2</Position>
       <DataType>date|0s</DataType>
     </column>
-    <column id="480" parent="355" name="timespan_in_days">
+    <column id="482" parent="355" name="timespan_in_days">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="481" parent="355" name="period_end">
+    <column id="483" parent="355" name="period_end">
       <Position>4</Position>
       <DataType>date|0s</DataType>
       <DefaultExpression>`period_begin` + interval `timespan_in_days` day</DefaultExpression>
       <ColumnKind>generated-virtual</ColumnKind>
     </column>
-    <column id="482" parent="355" name="requires_adult_key_card">
+    <column id="484" parent="355" name="requires_adult_key_card">
       <Position>5</Position>
       <DataType>tinyint(1)|0s</DataType>
     </column>
-    <column id="483" parent="355" name="cart_nr">
+    <column id="485" parent="355" name="cart_nr">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="484" parent="355" name="currently_in_use">
+    <column id="486" parent="355" name="currently_in_use">
       <Position>7</Position>
       <DataType>tinyint(1)|0s</DataType>
     </column>
-    <column id="485" parent="355" name="max_capacities">
+    <column id="487" parent="355" name="max_capacities">
       <Position>8</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="486" parent="355" name="size_in_inch">
+    <column id="488" parent="355" name="size_in_inch">
       <Position>9</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="487" parent="355" name="electric">
+    <column id="489" parent="355" name="electric">
       <Position>10</Position>
       <DataType>tinyint(1)|0s</DataType>
     </column>
-    <column id="488" parent="355" name="model">
+    <column id="490" parent="355" name="model">
       <Position>11</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="489" parent="355" name="training_wheels">
+    <column id="491" parent="355" name="training_wheels">
       <Position>12</Position>
       <DataType>tinyint(1)|0s</DataType>
     </column>
-    <column id="490" parent="355" name="bike_nr">
+    <column id="492" parent="355" name="bike_nr">
       <Position>13</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <key id="491" parent="355" name="PRIMARY">
+    <column id="493" parent="355" name="dome_id">
+      <Position>14</Position>
+      <DataType>int(11)|0s</DataType>
+    </column>
+    <key id="494" parent="355" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>vehicle_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="492" parent="356" name="way_of_delivery_id">
+    <column id="495" parent="356" name="way_of_delivery_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="493" parent="356" name="way_of_delivery_type">
+    <column id="496" parent="356" name="way_of_delivery_type">
       <Position>2</Position>
       <DataType>enum(&apos;email&apos;, &apos;mail&apos;, &apos;at_checkout&apos;)|0e</DataType>
     </column>
-    <column id="494" parent="356" name="offer_id">
+    <column id="497" parent="356" name="offer_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="495" parent="356" name="contract_id">
+    <column id="498" parent="356" name="contract_id">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <column id="496" parent="356" name="bill_id">
+    <column id="499" parent="356" name="bill_id">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <key id="497" parent="356" name="PRIMARY">
+    <key id="500" parent="356" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>way_of_delivery_id</ColNames>
       <Primary>1</Primary>

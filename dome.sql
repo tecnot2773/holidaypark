@@ -4,9 +4,10 @@ DROP TABLE IF EXISTS dome;
 CREATE TABLE dome
 (
     dome_id INTEGER,
-    activity_type ENUM('toilet', 'pool', 'restaurant', 'vehicle'),
+    /* activity_type ENUM('toilet', 'pool', 'restaurant', 'vehicle'), */
 
     PRIMARY KEY (dome_id)
+
 );
 
 DROP TABLE IF EXISTS toilet;
