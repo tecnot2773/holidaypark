@@ -76,4 +76,14 @@ CREATE TABLE vehicle
     dome_id INTEGER, /* foreign key dome */
 
     PRIMARY KEY (vehicle_id)
-)
+);
+
+DROP TABLE IF EXISTS has_entered;
+CREATE TABLE has_entered
+(
+    id INTEGER,
+    key_card_id INTEGER,
+    dome_id INTEGER,
+
+    PRIMARY KEY (id)
+);
