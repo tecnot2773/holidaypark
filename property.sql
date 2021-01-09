@@ -3,7 +3,7 @@ USE holiday_park;
 DROP TABLE IF EXISTS property;
 CREATE TABLE property
 (
-    house_nr INTEGER,
+    house_nr INTEGER NOT NULL AUTO_INCREMENT,
     address VARCHAR(255),
     pets_allowed BOOLEAN,
     max_occupants INTEGER,
@@ -14,7 +14,7 @@ CREATE TABLE property
     b_flag BOOLEAN,
     a_flag BOOLEAN,
     h_flag BOOLEAN,
-    floor INTEGER,
+    floor INTEGER NULL,
 
     PRIMARY KEY (house_nr)
 )

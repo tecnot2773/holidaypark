@@ -3,7 +3,7 @@ use holiday_park;
 DROP TABLE IF EXISTS offer;
 CREATE TABLE offer
 (
-    booking_request_id INTEGER,
+    booking_request_id INTEGER NOT NULL AUTO_INCREMENT,
     season VARCHAR(255),
     discount DECIMAL(8,2),
     price DECIMAL(8,2),

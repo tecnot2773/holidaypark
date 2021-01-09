@@ -3,7 +3,7 @@ USE holiday_park;
 DROP TABLE IF EXISTS key_card;
 CREATE TABLE key_card
 (
-    key_card_id INTEGER,
+    key_card_id INTEGER NOT NULL AUTO_INCREMENT,
     code BINARY,
     check_in DATE,
     check_out DATE,
@@ -21,7 +21,7 @@ CREATE TABLE key_card
 DROP TABLE IF EXISTS has_entrance;
 CREATE TABLE has_entrance
 (
-    id INTEGER,
+    id INTEGER NOT NULL AUTO_INCREMENT,
     key_card_id INTEGER,
     dome_id INTEGER,
 

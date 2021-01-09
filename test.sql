@@ -1,3 +1,4 @@
 use holiday_park;
 
-SHOW TABLES;
+SELECT * FROM property;
+

@@ -3,7 +3,7 @@ USE holiday_park;
 DROP TABLE IF EXISTS person;
 CREATE TABLE person
 (
-    ID  INTEGER,
+    ID  INTEGER NOT NULL AUTO_INCREMENT,
     first_name   VARCHAR(255),
     surname      VARCHAR(255),
     street       VARCHAR(255),
@@ -40,7 +40,7 @@ CREATE TABLE gifts_booking_to
 DROP TABLE IF EXISTS check_outs;
 CREATE TABLE check_outs
 (
-    check_out_id INTEGER,
+    check_out_id INTEGER NOT NULL AUTO_INCREMENT,
     customer_id INTEGER,
     reception_id INTEGER,
     key_cards_were_returned BOOLEAN,
@@ -60,7 +60,7 @@ CREATE TABLE works_at
 DROP TABLE IF EXISTS is_lent_to_at_checkin;
 CREATE TABLE is_lent_to_at_checkin
 (
-    id INTEGER,
+    id INTEGER NOT NULL AUTO_INCREMENT,
     customer_id INTEGER,
     reception_id INTEGER,
     key_card_id INTEGER,

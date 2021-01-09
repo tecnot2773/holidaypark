@@ -160,6 +160,7 @@ ALTER TABLE has_entered
         FOREIGN KEY (dome_id) REFERENCES dome (dome_id)
             ON DELETE RESTRICT
             ON UPDATE CASCADE;
+
 /* booking_request_activities - vehicle relation */
 ALTER TABLE vehicle_request
     ADD CONSTRAINT vehicle_request_booking
@@ -174,4 +175,14 @@ ALTER TABLE vehicle_request
             ON UPDATE CASCADE;
 
 /* booking_request_activities - restaurant relation */
-/* ???? HILFE ????*/
+ALTER TABLE restaurant_request
+    ADD CONSTRAINT restaurant_request_booking
+        FOREIGN KEY (booking_req_id) REFERENCES booking_request_activities (booking_req_id)
+            ON DELETE RESTRICT
+            ON UPDATE CASCADE;
+
+ALTER TABLE restaurant_request
+    ADD CONSTRAINT restaurant_request_restaurant
+        FOREIGN KEY (restaurant_id) REFERENCES restaurant (restaurant_id)
+            ON DELETE RESTRICT
+            ON UPDATE CASCADE;

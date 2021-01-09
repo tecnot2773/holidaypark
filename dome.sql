@@ -3,7 +3,7 @@ USE holiday_park;
 DROP TABLE IF EXISTS dome;
 CREATE TABLE dome
 (
-    dome_id INTEGER,
+    dome_id INTEGER NOT NULL AUTO_INCREMENT,
     /* activity_type ENUM('toilet', 'pool', 'restaurant', 'vehicle'), */
 
     PRIMARY KEY (dome_id)
@@ -13,7 +13,7 @@ CREATE TABLE dome
 DROP TABLE IF EXISTS toilet;
 CREATE TABLE toilet
 (
-    toilet_id INTEGER,
+    toilet_id INTEGER NOT NULL AUTO_INCREMENT,
     cleaning_interval_in_days INTEGER,
     b_flag BOOLEAN,
     changing_table BOOLEAN,
@@ -31,7 +31,7 @@ CREATE TABLE toilet
 DROP TABLE IF EXISTS pool;
 CREATE TABLE pool
 (
-    pool_id INTEGER,
+    pool_id INTEGER NOT NULL AUTO_INCREMENT,
     opening VARCHAR(255),
     nr_of_cabins INTEGER,
     max_customers INTEGER,
@@ -46,7 +46,7 @@ CREATE TABLE pool
 DROP TABLE IF EXISTS restaurant;
 CREATE TABLE restaurant
 (
-  restaurant_id INTEGER,
+  restaurant_id INTEGER NOT NULL AUTO_INCREMENT,
   open_at VARCHAR(255),
   smoking_room_exists BOOLEAN,
   nr_of_tables INTEGER,
@@ -59,7 +59,7 @@ CREATE TABLE restaurant
 DROP TABLE IF EXISTS vehicle;
 CREATE TABLE vehicle
 (
-    vehicle_id INTEGER,
+    vehicle_id INTEGER NOT NULL AUTO_INCREMENT,
     period_begin DATE,
     timespan_in_days INTEGER,
     period_end DATE AS (DATE_ADD(period_begin, INTERVAL timespan_in_days DAY)),
@@ -81,7 +81,7 @@ CREATE TABLE vehicle
 DROP TABLE IF EXISTS has_entered;
 CREATE TABLE has_entered
 (
-    id INTEGER,
+    id INTEGER NOT NULL AUTO_INCREMENT,
     key_card_id INTEGER,
     dome_id INTEGER,
 

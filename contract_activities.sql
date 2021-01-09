@@ -3,7 +3,7 @@ USE holiday_park;
 DROP TABLE IF EXISTS contract_activities;
 CREATE TABLE contract_activities
 (
-    contract_id INTEGER,
+    contract_id INTEGER NOT NULL AUTO_INCREMENT,
     price DECIMAL(8,2),
     name VARCHAR(255),
     time DATETIME,

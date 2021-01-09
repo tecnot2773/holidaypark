@@ -3,7 +3,7 @@ USE holiday_park;
 DROP TABLE IF EXISTS way_of_delivery;
 CREATE TABLE way_of_delivery
 (
-    way_of_delivery_id INTEGER,
+    way_of_delivery_id INTEGER NOT NULL AUTO_INCREMENT,
     way_of_delivery_type ENUM('email', 'mail', 'at_checkout'),
     offer_id INTEGER NULL,
     contract_id INTEGER NULL,
@@ -15,7 +15,8 @@ CREATE TABLE way_of_delivery
 DROP TABLE IF EXISTS email;
 CREATE TABLE email
 (
-    email_id INTEGER,
+    email_id INTEGER NOT NULL AUTO_INCREMENT,
+    way_of_delivery_id INTEGER,
     timestamp DATETIME,
 
     PRIMARY KEY (email_id)
@@ -24,7 +25,8 @@ CREATE TABLE email
 DROP TABLE IF EXISTS mail;
 CREATE TABLE mail
 (
-    mail_id INTEGER,
+    mail_id INTEGER NOT NULL AUTO_INCREMENT,
+    way_of_delivery_id INTEGER,
 
     PRIMARY KEY (mail_id)
 );
@@ -32,7 +34,8 @@ CREATE TABLE mail
 DROP TABLE IF EXISTS at_checkout;
 CREATE TABLE at_checkout
 (
-    checkout_id INTEGER,
+    checkout_id INTEGER NOT NULL AUTO_INCREMENT,
+    way_of_delivery_id INTEGER,
 
     PRIMARY KEY (checkout_id)
 )
