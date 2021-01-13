@@ -1,6 +1,7 @@
 use holiday_park;
 
 DROP TABLE IF EXISTS contract;
+ALTER TABLE contract AUTO_INCREMENT = 1;
 CREATE TABLE contract
 (
     contract_id INTEGER NOT NULL AUTO_INCREMENT,

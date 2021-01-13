@@ -1,4 +1,3 @@
 use holiday_park;
 
-SELECT * FROM property;
-
+SELECT * FROM works_at;

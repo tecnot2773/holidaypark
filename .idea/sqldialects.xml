@@ -8,6 +8,14 @@
     <file url="file://$PROJECT_DIR$/contract.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/contract_activities.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/create_database.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/data/10_entrance.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/data/11_dome.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/data/2_property.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/data/3_booking_request.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/data/4_offer.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/data/8_reception.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/data/99_activities.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/data/9_keycard.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/dome.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/entrance.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/keycard.sql" dialect="MariaDB" />

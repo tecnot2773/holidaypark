@@ -60,20 +60,33 @@ DROP TABLE IF EXISTS vehicle;
 CREATE TABLE vehicle
 (
     vehicle_id INTEGER NOT NULL AUTO_INCREMENT,
-    period_begin DATE,
-    timespan_in_days INTEGER,
-    period_end DATE AS (DATE_ADD(period_begin, INTERVAL timespan_in_days DAY)),
     requires_adult_key_card BOOLEAN,
+
+    dome_id INTEGER, /* foreign key dome */
+
+    PRIMARY KEY (vehicle_id)
+);
+
+DROP TABLE IF EXISTS vehicle_cart;
+CREATE TABLE vehicle_cart
+(
+    vehicle_id INTEGER, /* foreign key vehicle */
     cart_nr INTEGER NULL, /* golf cart attribute */
     currently_in_use BOOLEAN NULL, /* golf cart attribute */
     max_capacities INTEGER NULL, /* golf cart attribute */
+
+    PRIMARY KEY (vehicle_id)
+);
+
+DROP TABLE IF EXISTS vehicle_bike
+CREATE TABLE vehicle_bike
+(
+    vehicle_id INTEGER, /* foreign key vehcile */
     size_in_inch INTEGER NULL, /* bike attribute */
     electric BOOLEAN NULL, /* bike attribute */
     model VARCHAR(255) NULL, /* bike attribute */
     training_wheels BOOLEAN, /* bike attribute */
     bike_nr INTEGER NULL, /* bike attribute */
-
-    dome_id INTEGER, /* foreign key dome */
 
     PRIMARY KEY (vehicle_id)
 );

@@ -16,14 +16,3 @@ CREATE TABLE key_card
 
     PRIMARY KEY (key_card_id)
 );
-
-
-DROP TABLE IF EXISTS has_entrance;
-CREATE TABLE has_entrance
-(
-    id INTEGER NOT NULL AUTO_INCREMENT,
-    key_card_id INTEGER,
-    dome_id INTEGER,
-
-    PRIMARY KEY (id)
-);

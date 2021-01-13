@@ -117,7 +117,7 @@ ALTER TABLE contract
 ALTER TABLE bill
     ADD CONSTRAINT bill_contract
         FOREIGN KEY (contract_id) REFERENCES contract (contract_id)
-            ON DELETE RESTRICT
+            ON DELETE SET NULL
             ON UPDATE CASCADE;
 
 /* offer - way_of_delivery relation */
