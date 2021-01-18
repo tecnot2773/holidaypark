@@ -25,16 +25,16 @@ INSERT INTO restaurant (open_at, smoking_room_exists, nr_of_tables, dome_id) VAL
     ('Every day 12-22', TRUE, 20, 1);
 
 DELETE FROM vehicle WHERE vehicle_id IS NOT NULL;
-INSERT INTO vehicle (requires_adult_key_card, dome_id) VALUES
-    (TRUE, 1),
-    (TRUE, 1),
-    (FALSE, 1),
-    (FALSE, 1);
+INSERT INTO vehicle (requires_adult_key_card, dome_id, currently_in_use) VALUES
+    (TRUE, 1, FALSE),
+    (TRUE, 1, FALSE),
+    (FALSE, 1, FALSE),
+    (FALSE, 1, TRUE);
 
 DELETE FROM vehicle_cart WHERE vehicle_id IS NOT NULL;
-INSERT INTO vehicle_cart (vehicle_id, cart_nr, currently_in_use, max_capacities) VALUES
-    (1, 1, FALSE, 4),
-    (2, 2, FALSE, 4);
+INSERT INTO vehicle_cart (vehicle_id, cart_nr, max_capacities) VALUES
+    (1, 1, 4),
+    (2, 2, 4);
 
 DELETE FROM vehicle_bike WHERE vehicle_id IS NOT NULL;
 INSERT INTO vehicle_bike (vehicle_id, size_in_inch, electric, model, training_wheels, bike_nr) VALUES

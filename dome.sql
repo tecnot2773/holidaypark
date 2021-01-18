@@ -61,7 +61,7 @@ CREATE TABLE vehicle
 (
     vehicle_id INTEGER NOT NULL AUTO_INCREMENT,
     requires_adult_key_card BOOLEAN,
-
+    currently_in_use BOOLEAN NULL,
     dome_id INTEGER, /* foreign key dome */
 
     PRIMARY KEY (vehicle_id)
@@ -72,7 +72,6 @@ CREATE TABLE vehicle_cart
 (
     vehicle_id INTEGER, /* foreign key vehicle */
     cart_nr INTEGER NULL, /* golf cart attribute */
-    currently_in_use BOOLEAN NULL, /* golf cart attribute */
     max_capacities INTEGER NULL, /* golf cart attribute */
 
     PRIMARY KEY (vehicle_id)

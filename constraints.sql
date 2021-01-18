@@ -186,3 +186,16 @@ ALTER TABLE restaurant_request
         FOREIGN KEY (restaurant_id) REFERENCES restaurant (restaurant_id)
             ON DELETE RESTRICT
             ON UPDATE CASCADE;
+
+use holiday_park;
+ALTER TABLE vehicle_bike
+    ADD CONSTRAINT vehicle_bike_constraint
+        FOREIGN KEY (vehicle_id) REFERENCES vehicle (vehicle_id)
+            ON DELETE RESTRICT
+            ON UPDATE CASCADE;
+
+ALTER TABLE vehicle_cart
+    ADD CONSTRAINT vehicle_cart_constraint
+        FOREIGN KEY (vehicle_id) REFERENCES vehicle (vehicle_id)
+            ON DELETE RESTRICT
+            ON UPDATE CASCADE;
