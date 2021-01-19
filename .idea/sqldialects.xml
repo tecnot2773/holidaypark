@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/Abfragen.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/bill.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/booking_request.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/booking_request_activities.sql" dialect="MariaDB" />
@@ -10,11 +11,14 @@
     <file url="file://$PROJECT_DIR$/create_database.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/data/10_entrance.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/data/11_dome.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/data/12_activities.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/data/2_property.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/data/3_booking_request.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/data/4_offer.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/data/5_contract.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/data/6_bill.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/data/7_way_of_delivery.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/data/8_reception.sql" dialect="MariaDB" />
-    <file url="file://$PROJECT_DIR$/data/99_activities.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/data/9_keycard.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/dome.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/entrance.sql" dialect="MariaDB" />
@@ -23,7 +27,6 @@
     <file url="file://$PROJECT_DIR$/person.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/property.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/reception.sql" dialect="MariaDB" />
-    <file url="file://$PROJECT_DIR$/test.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/way_of_delivery.sql" dialect="MariaDB" />
   </component>
 </project>

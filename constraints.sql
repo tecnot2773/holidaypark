@@ -62,7 +62,7 @@ ALTER TABLE is_lent_to_at_checkin
 ALTER TABLE is_lent_to_at_checkin
     ADD CONSTRAINT is_lent_to_at_checkin_reception
         FOREIGN KEY (reception_id) REFERENCES reception (ID)
-            ON DELETE RESTRICT
+            ON DELETE SET NULL
             ON UPDATE CASCADE;
 
 ALTER TABLE is_lent_to_at_checkin

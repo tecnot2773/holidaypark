@@ -77,10 +77,10 @@ CREATE TABLE vehicle_cart
     PRIMARY KEY (vehicle_id)
 );
 
-DROP TABLE IF EXISTS vehicle_bike
+DROP TABLE IF EXISTS vehicle_bike;
 CREATE TABLE vehicle_bike
 (
-    vehicle_id INTEGER, /* foreign key vehcile */
+    vehicle_id INTEGER, /* foreign key vehicle */
     size_in_inch INTEGER NULL, /* bike attribute */
     electric BOOLEAN NULL, /* bike attribute */
     model VARCHAR(255) NULL, /* bike attribute */

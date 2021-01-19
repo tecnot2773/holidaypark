@@ -8,9 +8,9 @@ CREATE TABLE key_card
     check_in DATE,
     check_out DATE,
     card_owner_id INTEGER, /* foreign key contract*/
-    adult_key_card BOOLEAN NULL,
-    child_key_card BOOLEAN NULL,
-
+    key_card_type ENUM('child', 'adult'),
+    age INTEGER,
+    name VARCHAR(255),
     reception_id INTEGER NULL, /* foreign key reception */
     bill_nr INTEGER NULL, /* foreign key bill */
 
