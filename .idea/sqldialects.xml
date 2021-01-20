@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/Abfragen.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/0_create_database.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/abfragen.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/bill.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/booking_request.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/booking_request_activities.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/constraints.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/contract.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/contract_activities.sql" dialect="MariaDB" />
-    <file url="file://$PROJECT_DIR$/create_database.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/data/10_entrance.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/data/11_dome.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/data/12_activities.sql" dialect="MariaDB" />

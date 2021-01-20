@@ -187,7 +187,6 @@ ALTER TABLE restaurant_request
             ON DELETE RESTRICT
             ON UPDATE CASCADE;
 
-use holiday_park;
 ALTER TABLE vehicle_bike
     ADD CONSTRAINT vehicle_bike_constraint
         FOREIGN KEY (vehicle_id) REFERENCES vehicle (vehicle_id)
