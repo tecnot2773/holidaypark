@@ -1,7 +1,6 @@
 use holiday_park;
 
 DROP TABLE IF EXISTS contract;
-ALTER TABLE contract AUTO_INCREMENT = 1;
 CREATE TABLE contract
 (
     contract_id INTEGER NOT NULL AUTO_INCREMENT,
@@ -11,4 +10,4 @@ CREATE TABLE contract
     offer_id INTEGER, /* foreign key offer */
 
     PRIMARY KEY (contract_id)
-)
+);
